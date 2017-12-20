@@ -1,0 +1,226 @@
+.profile-page{
+  .profile-content{
+    background-color: #f6f6f6;
+    padding-top:  0;}
+
+  .map-block {
+    padding-left:20px;
+    padding-right:0;
+
+    .mapDiv{
+      background: #ffffff;
+      padding:20px;
+      border-radius:3px;
+      margin-top: 20px;
+    }
+    .bio{
+      margin-top:40px;
+      padding-bottom:0;
+    }
+    #map {
+      min-height: 320px;
+      width: 100%;
+      border: none;
+      padding-left: 15px;
+    }
+  }
+
+  .profile-card{
+    padding:15px 30px;
+    margin-top:30px;
+    margin-bottom:30px;
+    display:inline-block;
+    max-width:60%;
+    h3{
+      margin-top:0;
+    }
+  }
+  .contact-pro{
+    text-align:center;
+    display:block;
+    h6{
+      text-align:center;
+      margin: 15px 0;
+      float:left;
+    }
+
+  }
+  .contact-btn{
+    background: $light-blue-600;
+    text-transform:none;
+    font-size:16px;
+    margin-top:30px;
+  }
+  .services{
+    margin-top:-100px;
+  }
+  .card{
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    border-radius: 3px;
+    box-shadow:none;
+  }
+  .summary{
+    border-radius:3px;
+    background:#fff;
+    text-align:center;
+    transition: box-shadow .5s ease;
+  }
+  .affix{
+    position:fixed!important;
+    width:33%;
+    top:110px;
+  }
+  .trophy-section{
+    padding: 0;
+    margin-top:30px;
+    border-top:1px solid #f1f1f1;
+    padding-top:20px;
+
+    .trophy{
+      padding-left:15px;
+      padding-right:15px;
+      display:inline-block;
+      text-align:center;
+      min-width: 113px;
+
+      transition: 500ms all ease;
+      &:hover{
+        span{
+          color: $light-blue-600;
+        }
+        span{
+          transform: rotateY(180deg) scale(1.4);
+        }
+      }
+      span{
+        font-size:26px;
+        display:block;
+      }
+      h6{
+        font-weight:300;
+        text-transform:none;
+        font-size:14px;
+        cursor: default;
+      }
+      span,h6{
+        transition: 1s all ease;
+      }
+    }
+  }
+  .left-div{
+    margin-top:40px;
+    padding: 0;
+  }
+  .company-block{
+    padding: 20px;
+    border-radius:3px;
+    background:#ffffff;
+
+    .card-background{
+      border-radius:0;
+      &:after{
+        background: rgba(0,0,0,0);
+      }
+    }
+  }
+  canvas{
+
+  }
+  .chart-div{
+    padding:20px;
+
+ border-radius:3px;
+    margin-top:20px;
+  }
+  .nameCard{
+    padding-top:0;
+    padding-bottom: 0;
+  }
+  .resume{
+    table{
+      margin-top:30px;
+      margin-bottom:30px;
+      td{
+        width:25%;
+        &:first-child{
+          width:50%;
+        }
+      }
+      th{
+        font-size:1.1em;
+      }
+      th:first-child{
+        font-weight:500;
+      }
+    }
+  }
+  .job{
+    font-weight:400;
+    text-transform:none;
+  }
+  .checkbox-label{
+    color: rgba(50,50,50,1)!important;
+  }
+  .lead{
+    padding-left:15px;
+    color: gold;
+    font-size:2em;
+  }
+  input{
+    border-radius:0;
+  }
+}
+
+@media(max-width: 767px){
+  .profile-page{
+    .page-header{
+      min-height:0!important;
+    }
+    .resume{
+      padding: 30px 0;
+    }
+    .container{
+      padding: 0;
+    }
+    .table-responsive{
+      border:none;
+    }
+  }
+  .row{
+    margin:0;
+  }
+
+  }
+  .profile-drop{
+    transition: all .5s ease;
+    position:fixed;
+    width:100%;
+    height:60px;
+    max-height:100px;
+    background:#fff;
+    top:-100px;
+    z-index:50;
+    border-bottom: 2px solid rgba(0,0,0,.05);
+    h4{
+      margin-top:5px;
+      font-size:14px;
+      line-height:14px;
+    }
+    h6{
+      font-size:11px;
+      line-height:12px!important;
+      display:block!important;
+    }
+    img{
+      max-height:50px;
+      margin:5px 0;
+      border:1px solid #ccc;
+    }
+    a{
+      margin-top: 8px
+    }
+}
+.canvasjs-chart-credit{
+  display:none;
+}

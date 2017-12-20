@@ -1,0 +1,109 @@
+<template name="proProfileUpdate">
+  <div class="wrapper">
+    {{> proNavbar }}
+    <div class="sidebar" data-color="red" data-image="/assets/img/sidebar-4.jpg">
+
+      <div class="sidebar-wrapper">
+
+        <div class="user">
+          <img src="{{#if user.profile.image}}{{user.profile.image}}{{else}}/assets/img/samplePro.png{{/if}}" class="img-circle img-responsive">
+          <h5>{{user.profile.firstName}} {{user.profile.lastName}}{{getCPA}}</h5>
+          <h6>{{user.profile.jobTitle}} at {{getCompany.name}}</h6>
+        </div>
+
+        <ul class="nav">
+          <li>
+            <a href="/pro/leads">
+              <i class="material-icons">dashboard</i>
+              <p>Leads Dashboard</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="material-icons">person_outline</i>
+              <p>View Profile</p>
+            </a>
+          </li>
+          <li class="active">
+            <a href="/pro/profile/update">
+              <i class="material-icons">update</i>
+              <p>Update Profile</p>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-panel smoke-bg">
+
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row" style="margin:0;">
+
+            <div id="nav-tabs">
+              <!-- Tabs with icons on Card -->
+              <div class="card card-nav-tabs">
+                <div class="header header-rose">
+                  <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                      <ul class="nav nav-tabs" data-tabs="tabs">
+                        <li class="active">
+                          <a href="#" onclick="return false">
+                            <i class="material-icons">people</i>
+                            Profile Updates
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="content centered">
+                  <form class="form" method="" action="">
+                    <h4 class="modal-title">Change Password</h4>
+                    <div class="row">
+                      <div class="col-sm-4 col-sm-offset-4">
+                        <div class="form-group label-floating">
+                          <label class="control-label">Current Password</label>
+                          <input name="currentPassword" type="password" class="form-control" required>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-4 col-sm-offset-4">
+                        <div class="form-group label-floating">
+                          <label class="control-label">New Password</label>
+                          <input name="newPassword" type="password" class="form-control" required>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-4 col-sm-offset-4">
+                        <div class="form-group label-floating">
+                          <label class="control-label">ReEnter Password</label>
+                          <input name="retypePassword" type="password" class="form-control" required>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="footer text-center">
+                      <input type="submit" class="btn btn-primary btn-wd btn-lg chg-pwd-btn" value="Change Password">
+                    </div>
+                  </form>
+                </div>
+
+                <div class="content centered" style="height:400px;padding-top:10px;">
+                  <h5>Please email your profile change requests and/or questions to <b>reid@topadvisors.co</b>, and we will update it as soon as we can.</h5>
+                  <h5><br><br>Thank you!</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Tabs with icons on Card -->
+    </div>
+  </div>
+</template>
